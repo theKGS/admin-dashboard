@@ -95,6 +95,16 @@ body {
     margin-top: 48px;
 }
 
+.announcements hr {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.announcements p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 
 
 .pitem {
@@ -113,8 +123,6 @@ body {
 }
 
 .announcementcontainer {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
     background: white;
     border-radius: 8px;
 }
