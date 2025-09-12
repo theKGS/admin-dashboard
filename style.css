@@ -73,6 +73,7 @@ body {
 }
 
 
+
 /*
     Headers
 */
@@ -109,6 +110,10 @@ body {
 
 
 
+/*
+    Project items
+*/
+
 .pitem {
     margin: 5%;
     background-color: white;
@@ -135,6 +140,9 @@ body {
 
 
 
+/*
+    Announcements sidebar
+*/
 
 .announcements {
     background-color: #e2e8f0;
@@ -152,7 +160,4 @@ body {
     background-color: #e2e8f0;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-}
-
-.trending > div:first-child {
 }
