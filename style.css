@@ -30,6 +30,7 @@ body {
     margin: auto;
     margin-left: 10px;
     color: white;
+    font-family: Roboto;
 }
 
 .sidepanel > li:first-child {
@@ -142,11 +143,14 @@ body {
     margin-bottom: 0px;
     margin-top: 0px;
     margin-right: 15px;
+    font-family: Roboto;
+    color: rgb(110, 110, 110);
 }
 
 .pitem h4 {
     margin-left: 15px;
     margin-bottom: 0px;
+    font-family: Roboto;
 }
 
 
