@@ -16,13 +16,12 @@ body {
 
     list-style: none;
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 9fr;
+    grid-template-rows: 3fr repeat(10, 1fr) 9fr;
     grid-template-columns: 1fr 10fr;
 }
 
 .sidepanel > li > img {
     width: 1.5vw;
-    height: 1.5vw;
     margin: auto;
 }
 
@@ -38,11 +37,57 @@ body {
     font-size: 32px;
 }
 
+
+
+/*
+    Search panel
+*/
+
 .toppanelsearch {
-    background-color: gainsboro;
+    background-color: aqua;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
+
+.toppanelsearch ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr 1fr 1fr 1fr;
+}
+
+.toppanelsearch img {
+    width: 10px;
+}
+
+.toppanelsearch li:nth-child(1) {
+    background-color: greenyellow;
+    align-self: center;
+    justify-self: center;
+}
+
+.toppanelsearch li:nth-child(2) {
+    background-color: red;
+    align-self: center;
+}
+
+.toppanelsearch li:nth-child(2) > input {
+    border-radius: 8px;
+    border-style: none;
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .toppanelmenu {
     background-color: red;
@@ -114,7 +159,7 @@ body {
 }
 
 .pitem {
-    margin: 2%;
+    margin: 10px;
     background-color: white;
     border-left: 8px solid #f0b429;
     border-radius: 8px;
@@ -125,7 +170,7 @@ body {
 
 .pbottom {
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr 1fr;
+    grid-template-columns: 8fr 1fr 1fr 1fr;
     list-style: none;
 }
 
