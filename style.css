@@ -5,7 +5,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 5fr 5fr;
+    grid-template-rows: 0.8fr 0.5fr 5fr 5fr;
 }
 
 .sidepanel {
@@ -30,6 +30,7 @@ body {
     margin-left: 10px;
     color: white;
     font-family: Roboto;
+    font-weight: bold;
 }
 
 .sidepanel > li:first-child {
@@ -44,7 +45,6 @@ body {
 */
 
 .toppanelsearch {
-    background-color: aqua;
     grid-column: 2 / 4;
     grid-row: 1 / 2;
 }
@@ -52,48 +52,51 @@ body {
 .toppanelsearch ul {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr 1fr 1fr 1fr;
-}
-
-.toppanelsearch img {
-    width: 10px;
+    grid-template-columns: 1fr 10fr 1fr 1fr 3fr;
 }
 
 .toppanelsearch li:nth-child(1) {
-    background-color: greenyellow;
     align-self: center;
     justify-self: center;
+    width: 2vw;
 }
 
 .toppanelsearch li:nth-child(2) {
-    background-color: red;
     align-self: center;
 }
 
 .toppanelsearch li:nth-child(2) > input {
-    border-radius: 8px;
+    border-radius: 15px;
     border-style: none;
     width: 70%;
+    height: 30px;
+    background-color: #e2e8f0;
 }
 
-
-
-
-
-
-
-
-
-
-
+.toppanelsearch li:nth-child(3) {
+    align-self: center;
+    justify-self: center;
+    width: 2vw;
+}
 
 
 
 .toppanelmenu {
-    background-color: red;
     grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
+
+.toppanelmenu ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+}
+
+
+
+/*
+    Project display
+*/
 
 .projects {
     background-color: #e2e8f0;
@@ -153,10 +156,6 @@ body {
 /*
     Project items
 */
-
-.projectslot {
-    display: grid;
-}
 
 .pitem {
     margin: 10px;
