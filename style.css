@@ -5,7 +5,9 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr 2.5fr 10fr 10fr;
+    grid-template-rows: 2fr 2.5fr 14fr 14fr;
+
+    font-family: Roboto;
 }
 
 .sidepanel {
@@ -123,8 +125,12 @@ body {
     background-color: #1992d4;
     color: white;
     border-style: none;
-    border-radius: 5px;
+    border-radius: 20px;
+    width: 110px;
+    height: 40px;
+    font-weight: bold;
 }
+
 
 
 /*
@@ -146,33 +152,29 @@ body {
     padding-bottom: 10px;
 }
 
-/* Projects header positioning */
-.projects>div:first-child {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-}
-
 
 
 /*
     Headers
 */
 
-.projects>.header {
+.projects > .header {
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 24px;
+    margin-top: 48px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.announcements > .header {
     font-size: 18px;
     font-weight: 900;
     margin-left: 24px;
     margin-top: 48px;
 }
 
-.announcements>.header {
-    font-size: 18px;
-    font-weight: 900;
-    margin-left: 24px;
-    margin-top: 48px;
-}
-
-.trending>.header {
+.trending > .header {
     font-size: 18px;
     font-weight: 900;
     margin-left: 24px;
@@ -208,6 +210,7 @@ body {
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .pbottom>li:nth-child(1) {
@@ -246,6 +249,7 @@ body {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     display: grid;
+    padding-right: 40px;
 }
 
 .announcementcontainer {
@@ -257,4 +261,5 @@ body {
     background-color: #e2e8f0;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
+    padding-right: 40px;
 }
