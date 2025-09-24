@@ -4,7 +4,7 @@ body {
     margin: 0;
 
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1.4fr;
     grid-template-rows: 2fr 2.5fr 18fr 18fr;
 
     font-family: Roboto;
@@ -78,10 +78,18 @@ body {
 .toppanelsearch li:nth-child(3) {
     align-self: center;
     justify-self: center;
-    width: 2vw;
+    width: 1.8vw;
 }
 
+.profpic-search > img {
+    width: 50px;
+}
 
+.name-search {
+    font-size: larger;
+    font-weight: 900;
+    align-self: center;
+}
 
 
 
@@ -110,8 +118,7 @@ body {
     justify-self: normal;
 }
 
-
-.profpic>img {
+.profpic-menu > img {
     width: 70px;
 }
 
@@ -188,16 +195,6 @@ body {
     margin-top: 48px;
 }
 
-.announcements hr {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.announcements p {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 
 
 /*
@@ -267,7 +264,10 @@ body {
     border-radius: 8px;
     box-shadow: 3px 3px 6px #b2b8c0;
     margin-bottom: 10px;
-    padding-left: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     display: grid;
 
@@ -275,7 +275,15 @@ body {
     align-items: center;
     justify-content: center;
 
-    font-size: small;
+    font-size: smaller;
+}
+
+.a-title {
+    font-weight: bold;
+}
+
+.a-text {
+    color: rgb(110, 110, 110);
 }
 
 
