@@ -5,7 +5,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 2fr 2.5fr 14fr 14fr;
+    grid-template-rows: 2fr 2.5fr 18fr 18fr;
 
     font-family: Roboto;
 }
@@ -83,6 +83,12 @@ body {
 
 
 
+
+
+/*
+    Top panel, button menu
+*/
+
 .toppanelmenu {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
@@ -91,6 +97,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
     font-family: Roboto;
+    margin: 0;
 }
 
 .toppanelmenu>li {
@@ -248,7 +255,10 @@ body {
     background-color: #e2e8f0;
     grid-column: 3 / 4;
     grid-row: 3 / 4;
+
     display: grid;
+    grid-template-rows: 1fr 4fr;
+
     padding-right: 40px;
 }
 
@@ -257,6 +267,15 @@ body {
     border-radius: 8px;
     box-shadow: 3px 3px 6px #b2b8c0;
     margin-bottom: 10px;
+    padding-left: 0px;
+
+    display: grid;
+
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+
+    font-size: small;
 }
 
 
@@ -270,6 +289,7 @@ body {
     grid-column: 3 / 4;
     grid-row: 4 / 5;
     display: grid;
+    grid-template-rows: 1fr 4fr;
     padding-right: 40px;
     box-shadow: 3px 3px 6px #b2b8c0;
 }
@@ -313,5 +333,5 @@ body {
 }
 
 .trb_tag {
-    font-weight: bold;    
+    font-weight: bold;
 }
